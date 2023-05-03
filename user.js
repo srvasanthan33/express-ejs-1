@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/", (request, response) => {
-    response.send("This is the user page");
+    response.json(users);
 });
 
 router.get("/new", (request, response) => {
@@ -21,6 +21,9 @@ router.post("/", (request, response) => {
 });
 
 const users = [
+    {
+        name: "User Page"
+    },
     {
         name: "Jason"
     },
