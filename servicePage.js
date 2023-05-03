@@ -12,7 +12,7 @@ router
         let isServiceValidTrue = true;
         if (isServiceValidTrue) {
             Services.push({ name: request.body.serviceName });
-            response.redirect;
+            response.redirect(`/servicePage/${Services.length - 1}`);
         }
     });
 
