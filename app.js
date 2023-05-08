@@ -13,6 +13,6 @@ app.get("/", (request, response) => {
     response.render("index");
 });
 
-app.use("/userpage", userPage);
+app.use("/userPage", userPage);
 app.use("/servicePage", servicePage);
-app.listen(3500);
+app.listen(process.env.PORT || 3500);
